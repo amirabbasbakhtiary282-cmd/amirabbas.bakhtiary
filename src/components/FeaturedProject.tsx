@@ -4,6 +4,8 @@ import { GithubIcon } from "./BrandIcons";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
+const projectMockupUrl = `${import.meta.env.BASE_URL}images/arzankala-mockup.png`;
+
 const features = [
   { icon: LayoutGrid, text: "رابط کاربری کاملاً ریسپانسیو برای موبایل و دسکتاپ" },
   { icon: Boxes, text: "دسته‌بندی محصولات و مرور آسان کالاها" },
@@ -35,7 +37,7 @@ export default function FeaturedProject() {
                 className="relative overflow-hidden rounded-2xl border border-emerald-400/20 shadow-2xl"
               >
                 <img
-                  src="/images/arzankala-mockup.png"
+                  src={projectMockupUrl}
                   alt="نمای پروژه ارزان‌کالا"
                   className="w-full scale-105 transition-transform duration-700 group-hover:scale-110"
                 />

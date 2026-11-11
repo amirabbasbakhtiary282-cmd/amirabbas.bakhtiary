@@ -10,6 +10,8 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
+  // GitHub Pages این پروژه را زیر نام مخزن سرو می‌کند، نه از ریشهٔ دامنه.
+  base: "/amirabbas.bakhtiary/",
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
     alias: {
